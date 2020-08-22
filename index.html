@@ -45,7 +45,7 @@
 			if (!document.location.href.includes('access_token')) {
 				let client_id = '701813920110-n8lhh3gseegv1onmk9kkmke7oqf2favd.apps.googleusercontent.com';
 				document.location.href = [`https://accounts.google.com/o/oauth2/v2/auth?client_id=${client_id}`,
-				`redirect_uri=${window.location.href}`,
+					`redirect_uri=https://vision.thecodersingh.com`,
 					`response_type=id_token token`,
 					`scope=openid https://www.googleapis.com/auth/cloud-vision`,
 				`nonce=${Math.random().toString()}`].join('&');
